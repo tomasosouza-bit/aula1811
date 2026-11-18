@@ -1,0 +1,48 @@
+
+
+.tomas{
+    font-size: 25px;
+    color: white;
+}
+
+.roxo{
+        color: blueviolet;
+
+}
+
+.branco{
+    color: white;
+}
+
+header{
+    background-color: black;
+}
+
+.nav-underline .nav-link.active {
+    color: #8000ff;
+    border-bottom-color: #8000ff;
+}
+
+li {
+    font-weight: bold;
+}
+
+.tomaSouza{
+    font-size: 40px;
+    color: white;
+}
+
+.caixaTexto {
+    background-color: black;
+    margin: 0;
+    padding: 30px 12px;
+    width: 100%;
+    color: white;
+}
+
+.texto {
+    margin: 0;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(233, 233, 233);
+}

@@ -14,29 +14,38 @@
 <body>
 
 
-    <header class="d-flex flex-wrap align-items-center justify-content-between py-3 mb-4 border-bottom px-3">
+    <header class="d-flex flex-wrap align-items-center justify-content-between py-3 mb-0 border-bottom px-3">
 
         <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
-            <span class="fs-4">Cabeçalho simples</span>
+            <strong> <span class="tomas">Tomas <span class="roxo">Souza</span></span></strong>
         </a>
-
-        <ul class="nav nav-pills">
+        <ul class="nav nav-underline">
             <li class="nav-item">
-                <a href="#" class="nav-link active">Inicio</a>
+                <a class="nav-link active" aria-current="page" href="#"><span class="roxo">Inicio</span></a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">Sobre</a>
+                <a class="nav-link" href="#"><span class="branco">Sobre</span></a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">Projetos</a>
+                <a class="nav-link" href="#"> <span class="branco">Projetos</span></a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">Contato</a>
+                <a class="nav-link disabled" aria-disabled="true"><span class="branco">Contato</span></a>
             </li>
-
         </ul>
 
     </header>
+    <div class="caixaTexto">
+
+        <p class="texto">Olá, eu sou <br><span class="tomaSouza">Tomas <span class="roxo">Souza</span> </span>
+            <br>Desenvolvedor Full Stack<br><br>
+            Apaixonado por tecnologia e sempre em busca<br>de aprender e criar soluções.
+        </p>
+
+    </div>
+
+      <a class="sm:flex-fill sm:text-center nav-link active" aria-current="page" href="#">Active</a>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
