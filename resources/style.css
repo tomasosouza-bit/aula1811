@@ -1,48 +1,238 @@
+/* =====================
+   BASE
+===================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f4f8;
+}
 
-.tomas{
-    font-size: 25px;
+/* =====================
+   CORES UTILITÁRIAS
+===================== */
+.roxo {
+    color: #7c3aed;
+}
+
+.branco {
     color: white;
 }
 
-.roxo{
-        color: blueviolet;
-
+/* =====================
+   HEADER
+===================== */
+header {
+    background-color: #0d0d0d;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
-.branco{
+.tomas {
+    font-size: 22px;
     color: white;
-}
-
-header{
-    background-color: black;
-}
-
-.nav-underline .nav-link.active {
-    color: #8000ff;
-    border-bottom-color: #8000ff;
 }
 
 li {
     font-weight: bold;
 }
 
-.tomaSouza{
-    font-size: 40px;
+.nav-underline .nav-link {
+    color: #ccc;
+}
+
+.nav-underline .nav-link:hover {
+    color: #7c3aed;
+}
+
+.nav-underline .nav-link.active {
+    color: #7c3aed;
+    border-bottom-color: #7c3aed;
+}
+
+/* =====================
+   HERO
+===================== */
+.hero {
+    background-color: #0d0d0d;
+    padding: 70px 80px;
+    min-height: 320px;
+}
+
+.hero-texto .texto {
+    color: #ccc;
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+.tomaSouza {
+    font-size: 52px;
+    font-weight: 800;
+    color: white;
+    line-height: 1.1;
+}
+
+.subtitulo {
+    color: white;
+    font-weight: 600;
+    margin: 10px 0 8px;
+}
+
+.descricao {
+    color: #aaa;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.btn-ver-projetos {
+    background-color: #7c3aed;
+    color: white;
+    border-radius: 30px;
+    padding: 10px 24px;
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+.btn-ver-projetos:hover {
+    background-color: #6d28d9;
     color: white;
 }
 
-.caixaTexto {
-    background-color: black;
+/* Ícone </> */
+.hero-icone {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 3px solid #7c3aed;
+    flex-shrink: 0;
+}
+
+.codigo-icone {
+    font-size: 48px;
+    font-weight: 800;
+    color: white;
+    font-family: monospace;
+}
+
+/* =====================
+   SEÇÕES
+===================== */
+.secao-clara {
+    background-color: #ffffff;
+}
+
+.secao-escura {
+    background-color: #f0f0f5;
+}
+
+.secao-titulo {
+    font-size: 28px;
+    font-weight: 700;
+    color: #111;
+    position: relative;
+    display: inline-block;
+}
+
+.secao-titulo::after {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 3px;
+    background-color: #7c3aed;
+    margin: 6px auto 0;
+    border-radius: 2px;
+}
+
+/* =====================
+   HABILIDADES
+===================== */
+.habilidade-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    width: 80px;
+}
+
+.habilidade-item img {
+    width: 52px;
+    height: 52px;
+}
+
+.habilidade-item p {
+    font-size: 13px;
+    font-weight: 600;
+    color: #333;
     margin: 0;
-    padding: 30px 12px;
+}
+
+/* =====================
+   PROJETOS
+===================== */
+.card-projeto {
+    background-color: #f9f9fb;
+    border: 1px solid #e0e0e8;
+    border-radius: 12px;
+    max-width: 340px;
     width: 100%;
-    color: white;
+    transition: box-shadow 0.2s;
 }
 
-.texto {
-    margin: 0;
-    font-weight: bold;
-    font-size: 20px;
-    color: rgb(233, 233, 233);
+.card-projeto:hover {
+    box-shadow: 0 4px 16px rgba(124, 58, 237, 0.15);
+}
+
+.icone-projeto {
+    background-color: #ede9fe;
+    color: #7c3aed;
+    border-radius: 10px;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    flex-shrink: 0;
+}
+
+.card-projeto h5 {
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 4px;
+}
+
+.card-projeto p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.link-projeto {
+    color: #7c3aed;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.link-projeto:hover {
+    text-decoration: underline;
+}
+
+/* =====================
+   CONTATO
+===================== */
+.icone-social {
+    color: #333;
+    transition: color 0.2s;
+}
+
+.icone-social:hover {
+    color: #7c3aed;
 }
